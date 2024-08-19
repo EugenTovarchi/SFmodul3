@@ -12,15 +12,17 @@ namespace SFmodul3
         {
 
 
-            string name = "Jane";
-            byte age = 27;
-            bool pet = true;
-            double footSize = 37.5;
+            Console.WriteLine($"What is your name is name?");
+            var name = Console.ReadLine();
+            Console.WriteLine($"What is your age?");
+            var age = (byte) int.Parse( Console.ReadLine() );
+            
+            Console.WriteLine("What is your favorite day?");
+            var dayOfWeek = (DayOfWeek) int.Parse(Console.ReadLine());
+            Console.WriteLine($"My favorite day is: {dayOfWeek}");
 
-            Console.WriteLine($"My name is {name}");
-            Console.WriteLine($"My age is {age}");
-            Console.WriteLine($"Do I have a pet? {pet}");
-            Console.WriteLine($"My shoe size is {footSize}");
+            int digit = 5;
+            byte convertDigit = (byte)digit;
 
             Console.ReadLine();
 
